@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <title>Chat Ariel</title>
+    <style>
+        #loading {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <section id="bodyApp" class="vh-100 d-flex align-items-center position-relative">
+
+        <img src="assets/logo.png" alt="avatar 3" style="position:fixed;top:50%;left:50%;transform:translate(-50%, -50%);opacity:.1;">
+
+        <div class="container py-5 vh-100">
+
+            <div class="row d-flex justify-content-center h-100">
+                <div class="col-12">
+
+                    <div class="card position-relative" id="chat2">
+                        <div class="card-header d-flex justify-content-between align-items-center p-3">
+                            <h5 class="mb-0">Chat Ariel</h5>
+                        </div>  
+                        
+                        <!-- Start Chat  -->
+                        <div class="card-body overflow-auto" id="bodyChat" data-mdb-perfect-scrollbar="true" style="position: relative; height: calc(100vh - 250px);"></div>
+                        <!-- End Chat  -->
+
+                        <div id="loading" style="color:red;font-size:17px;position:absolute;bottom:110px;right:21px;">Aguarde a resposta da AI....</div>
+
+                        <div class="card-footer text-muted d-flex justify-content-start align-items-center p-3">
+                            <img src="assets/logo.png" alt="avatar 3" style="width: 60px; height: 100%;">
+                            <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Type message">
+                            <a class="ms-1 text-muted" href="#!"><i class="fas fa-paperclip"></i></a>
+                            <a class="ms-3 text-muted" href="#!"><i class="fas fa-smile"></i></a>
+                            <a class="ms-3" href="#!"><i class="fas fa-paper-plane"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

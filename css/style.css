@@ -1,0 +1,47 @@
+.scrollable-content {
+    height: 200px;
+    overflow: auto;
+}
+
+/* Estilização das barras de rolagem para o ID "bodyChat" */
+#bodyChat::-webkit-scrollbar {
+    width: 3px; /* Largura da barra de rolagem vertical */
+}
+
+#bodyChat::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Cor do fundo da barra de rolagem */
+}
+
+#bodyChat::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor do polegar da barra de rolagem */
+}
+
+#bodyChat::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor do polegar da barra de rolagem em hover */
+}
+  
+#bodyApp{
+    background: rgb(0,187,255);
+    background: linear-gradient(90deg, rgba(0,187,255,1) 0%, rgba(26,136,210,1) 35%, rgba(0,67,255,1) 100%);
+}
+
+#chat2{
+    background-color: rgb(255 255 255 / 39%);
+}
+
+#chat2 .form-control {
+    border-color: transparent;
+}
+
+#chat2 .form-control:focus {
+    border-color: transparent;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
